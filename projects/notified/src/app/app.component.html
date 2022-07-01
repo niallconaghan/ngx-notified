@@ -29,4 +29,5 @@
 
 <ng-template #templateNotification let-notification>
   <span>This is a notification created from a custom template!</span>
+  <button ngx-notified-dismiss-button (click)="notification.dismiss()"></button>
 </ng-template>

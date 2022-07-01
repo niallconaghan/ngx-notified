@@ -14,7 +14,7 @@ export class AppComponent {
 
   placement: NotifiedPlacement = 'top';
   alignment: NotifiedAllignment = 'end';
-  duration: number = 3000;
+  duration: number | undefined = undefined;
 
   @ViewChild('templateNotification') templatePortalContent!: TemplateRef<{
     $implicit: NgxNotifiedRef;

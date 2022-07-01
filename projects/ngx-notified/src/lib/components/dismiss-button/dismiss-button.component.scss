@@ -1,0 +1,9 @@
+.uxa-notification-dismiss-button,
+:host {
+  position: absolute;
+  top: 8px;
+  inset-inline-end: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
