@@ -1,0 +1,5 @@
+<ngx-notified-container
+  *ngFor="let notification of notifications$ | async"
+  [notifiedContainer]="notification"
+  (animationend)="onAnimationEnd(notification)"
+></ngx-notified-container>

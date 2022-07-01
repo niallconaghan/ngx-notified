@@ -3,3 +3,6 @@
  */
 
 export * from './lib/ngx-notified.module';
+export * from './lib/components/notified-list/notified-list.component';
+export * from './lib/services/notified.service';
+

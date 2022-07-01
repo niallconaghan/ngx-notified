@@ -1,0 +1,32 @@
+
+<div class="container">
+  <form>
+    <input [(ngModel)]="placement" type="radio" value="top" name="placement">
+    <label>top</label>
+    <input [(ngModel)]="placement" type="radio" value="bottom" name="placement">
+    <label>bottom</label>
+  </form>
+  
+  <form>
+    <input [(ngModel)]="alignment" type="radio" value="start" name="alignment">
+    <label>start</label>
+    <input [(ngModel)]="alignment" type="radio" value="center" name="alignment">
+    <label>center</label>
+    <input [(ngModel)]="alignment" type="radio" value="end" name="alignment">
+    <label>end</label>
+  </form>
+
+  <form>
+    <label>Duration: </label>
+    <input type="text" name="duration" placeholder="duration" [(ngModel)]="duration">
+  </form>
+
+  <button (click)="openFromComponent()">Open from component</button>
+  <button (click)="openFromTemplate()">Open from template</button>
+</div>
+
+<ngx-notified-list></ngx-notified-list>
+
+<ng-template #templateNotification let-notification>
+  <span>This is a notification created from a custom template!</span>
+</ng-template>

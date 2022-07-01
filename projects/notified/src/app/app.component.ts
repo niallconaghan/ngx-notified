@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { NotifiedAllignment, NotifiedPlacement } from 'projects/ngx-notified/src/lib/interfaces/notified-config';
+import { NgxNotifiedRef } from 'projects/ngx-notified/src/lib/services/notified-ref';
+import { NgxNotifiedService } from 'projects/ngx-notified/src/public-api';
+import { NotificationComponent } from './notification/notification.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +11,31 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'notified';
+
+  placement: NotifiedPlacement = 'top';
+  alignment: NotifiedAllignment = 'end';
+  duration: number = 3000;
+
+  @ViewChild('templateNotification') templatePortalContent!: TemplateRef<{
+    $implicit: NgxNotifiedRef;
+  }>;
+
+  constructor(private readonly _notified: NgxNotifiedService) {
+  }
+
+  openFromComponent(): void {
+    this._notified.createFromComponent(NotificationComponent, {
+      duration: this.duration,
+      alignment: this.alignment,
+      placement: this.placement
+    });
+  }
+
+  openFromTemplate(): void {
+    this._notified.createFromTemplate(this.templatePortalContent, {
+      duration: this.duration,
+      alignment: this.alignment,
+      placement: this.placement
+    });
+  }
 }

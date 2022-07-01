@@ -1,0 +1,8 @@
+<ng-template *ngIf="!isTemplateRef" [cdkPortalOutlet]="componentPortal"></ng-template>
+
+<ng-container
+  *ngIf="isTemplateRef"
+  [ngTemplateOutlet]="templateRef"
+  [ngTemplateOutletContext]="{ $implicit: notifiedContainer }"
+>
+</ng-container>

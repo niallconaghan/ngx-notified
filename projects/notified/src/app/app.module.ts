@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxNotifiedModule } from 'ngx-notified';
+import { NgxNotifiedModule } from 'projects/ngx-notified/src/public-api';
 
 import { AppComponent } from './app.component';
+import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
-    NgxNotifiedModule
+    NgxNotifiedModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
