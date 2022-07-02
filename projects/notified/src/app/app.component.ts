@@ -14,7 +14,10 @@ export class AppComponent {
 
   placement: NotifiedPlacement = 'top';
   alignment: NotifiedAllignment = 'end';
-  duration: number | undefined = undefined;
+  duration: number | undefined = 5000;
+  dismissible: boolean = true;
+
+  width: number = 380;
 
   @ViewChild('templateNotification') templatePortalContent!: TemplateRef<{
     $implicit: NgxNotifiedRef;
@@ -27,7 +30,8 @@ export class AppComponent {
     this._notified.createFromComponent(NotificationComponent, {
       duration: this.duration,
       alignment: this.alignment,
-      placement: this.placement
+      placement: this.placement,
+      width: this.width
     });
   }
 
@@ -35,7 +39,8 @@ export class AppComponent {
     this._notified.createFromTemplate(this.templatePortalContent, {
       duration: this.duration,
       alignment: this.alignment,
-      placement: this.placement
+      placement: this.placement,
+      width: this.width
     });
   }
 }
