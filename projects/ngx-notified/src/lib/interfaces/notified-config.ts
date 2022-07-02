@@ -2,7 +2,6 @@ export interface NotifiedConfig {
     alignment?: NotifiedAllignment;
     placement?: NotifiedPlacement;
     duration?: number;
-    ariaLive?: 'off' | 'assertive' | 'polite';
     role?: string;
     width?: number | string;
 }
