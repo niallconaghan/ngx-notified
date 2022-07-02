@@ -31,8 +31,14 @@ Import `NgxNotificationModule` into your `AppModule`
 export class AppModule { }
 ```
 
-Inject `NgxNotifiedService` into the component you use trigger a notification from.
+Add the `ngx-notified-list` component to the root of your application.
 
+```html
+<!-- app.component.html -->
+<ngx-notified-list></ngx-notified-list>
+```
+
+Inject `NgxNotifiedService` into the component you use trigger a notification from.
 
 ```typescript
 // app.component.ts
