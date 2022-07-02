@@ -1,11 +1,12 @@
 {
   "name": "ngx-notified",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0",
     "@angular/cdk": "^14.0.4"
   },
+  "homepage": "https://ngx-notified.web.app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/niallconaghan/ngx-notified"

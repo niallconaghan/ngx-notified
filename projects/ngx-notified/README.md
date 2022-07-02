@@ -5,7 +5,7 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Demo
 
-Coming soon.
+View the demo page [here](https://ngx-notified.web.app/).
 
 ## Install
 
