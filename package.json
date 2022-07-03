@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-app": "ng build notified --configuration production",
+    "build-lib": "ng build ngx-notified --configuration production",
+    "deploy-app": "firebase deploy --only hosting:ngx-notified"
   },
   "private": true,
   "dependencies": {
