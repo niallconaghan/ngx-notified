@@ -1,33 +1,36 @@
 {
-  "name": "ngx-notified",
-  "version": "0.0.7",
-  "peerDependencies": {
-    "@angular/common": "^14.0.0",
-    "@angular/core": "^14.0.0",
-    "@angular/cdk": "^14.0.4"
-  },
-  "homepage": "https://ngx-notified.web.app/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/niallconaghan/ngx-notified"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "keywords": [
-    "ngx",
-    "ng2",
-    "angular",
-    "angular2",
-    "typescript",
-    "notify",
-    "notification",
-    "angular notification",
-    "notified",
-    "angular notified",
-    "alert",
-    "toast",
-    "notifications",
-    "popup"
-  ]
+    "name": "@niallconaghan/ngx-notified",
+    "version": "0.0.7",
+    "peerDependencies": {
+        "@angular/common": "^14.0.0",
+        "@angular/core": "^14.0.0",
+        "@angular/cdk": "^14.0.4"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "homepage": "https://ngx-notified.web.app/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/niallconaghan/ngx-notified"
+    },
+    "dependencies": {
+        "tslib": "^2.3.0"
+    },
+    "keywords": [
+        "ngx",
+        "ng2",
+        "angular",
+        "angular2",
+        "typescript",
+        "notify",
+        "notification",
+        "angular notification",
+        "notified",
+        "angular notified",
+        "alert",
+        "toast",
+        "notifications",
+        "popup"
+    ]
 }
